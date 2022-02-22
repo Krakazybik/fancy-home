@@ -5,7 +5,7 @@
   line-height: 1.6em;
   font-weight: 600;
 
-  color: $theme-alt;
+  color: $theme-light;
   display: flex;
   flex-direction: column;
 }
@@ -16,10 +16,12 @@
   padding: 0 16px;
   border-radius: 3px;
   background-color: $theme-main-light;
-  border: 1px solid $theme-alt;
+  border: 1px solid $theme-alt-dark;
+
   &:focus {
-    outline: $theme-light;
+    outline: 1px solid $theme-alt;
   }
+
   &::placeholder {
     color: $theme-alt-dark;
   }
