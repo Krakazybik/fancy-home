@@ -1,0 +1,16 @@
+@import '../styles/main';
+
+.Button {
+  height: 40px;
+  padding: 4px 24px;
+  background-color: $theme-alt;
+  border: 1px solid $theme-main;
+  color: $theme-main;
+  border-radius: 2px;
+  font-weight: 600;
+
+  &:hover {
+    color: $theme-light;
+    border: 2px solid $theme-light;
+  }
+}
