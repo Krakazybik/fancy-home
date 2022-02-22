@@ -1,0 +1,26 @@
+@import '../styles/main';
+
+.Label {
+  font-size: 1em;
+  line-height: 1.6em;
+  font-weight: 600;
+
+  color: $theme-alt;
+  display: flex;
+  flex-direction: column;
+}
+
+.Input {
+  color: $theme-alt;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 3px;
+  background-color: $theme-main-light;
+  border: 1px solid $theme-alt;
+  &:focus {
+    outline: $theme-light;
+  }
+  &::placeholder {
+    color: $theme-alt-dark;
+  }
+}

@@ -1,6 +1,15 @@
+import cn from 'classnames';
 import React from 'react';
 import styles from './styles.module.scss';
 
-export const Card: React.FC = ({ children }) => (
-  <div className={styles.Card}>{children}</div>
+type CardProps = {
+  className?: string | undefined;
+};
+
+export const Card: React.FC<CardProps> = ({ children, className }) => (
+  <div className={cn(styles.Card, className)}>{children}</div>
 );
+
+Card.defaultProps = {
+  className: undefined,
+};

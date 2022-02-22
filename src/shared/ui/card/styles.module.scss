@@ -2,10 +2,12 @@
 
 .Card {
   background-color: $theme-main;
-  padding: 20px;
+  padding: 16px 24px;
   display: flex;
+  flex-direction: column;
+  grid-gap: 12px;
   min-width: 400px;
-  min-height: 300px;
+  min-height: 200px;
+  border-radius: 2px;
   @include box-shadow;
-
 }
