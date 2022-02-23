@@ -6,6 +6,7 @@ import { Input } from 'shared/ui/input';
 // eslint-disable-next-line import/no-internal-modules
 import 'shared/ui/styles/main.scss';
 
+import { Line } from '../shared/ui/line';
 import styles from './styles.module.scss';
 
 export function App() {
@@ -17,7 +18,6 @@ export function App() {
           <Input placeholder="test" label="Password" />
           <Button onClick={() => false} title="Submit" />
         </Card>
-
         <Card>
           <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -37,6 +37,10 @@ export function App() {
             dignissimos enim fugit hic id magnam nam neque reiciendis veniam
             voluptatem! Explicabo nulla pariatur voluptate!
           </div>
+          <Line>
+            <Button onClick={() => false} title="Vote" />
+            <Button onClick={() => false} title="Vote" />
+          </Line>
         </Card>
       </Block>
     </div>

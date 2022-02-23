@@ -12,5 +12,5 @@ export const Block: React.FC<BlockProps> = ({ children, maxWidth }) => (
 );
 
 Block.defaultProps = {
-  maxWidth: 600,
+  maxWidth: 500,
 };
